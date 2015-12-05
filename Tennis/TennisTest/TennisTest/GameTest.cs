@@ -15,11 +15,11 @@ namespace TennisTest
             Assert.AreEqual(0, g.PlayerOneScore);
         }
 
-        //[TestMethod]
-        //public void PlayerTwoStartsWithZero()
-        //{
-        // Assert.AreEqual();
-        //}
+        [TestMethod]
+        public void PlayerTwoStartsWithZero()
+        {
+            Assert.IsFalse(true);
+        }
 
         //[TestMethod]
         //public void AtZeroZeroNextScoreShouldBe15()
