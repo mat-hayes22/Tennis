@@ -23,11 +23,14 @@ namespace TennisTest
 
         }
 
-        //[TestMethod]
-        //public void AtZeroZeroNextScoreShouldBe15()
-        //{
-        // Assert.AreEqual();
-        //}
+        [TestMethod]
+        public void AtZeroZeroNextScoreShouldBe15()
+        {
+            Game g = new Game(0, 0);
+            g.ScorePoint(1);
+            Assert.AreEqual(0, g.PlayerTwoScore);
+
+        }
 
         //[TestMethod]
         //public void At15ZeroNextScoreShouldBe30()
