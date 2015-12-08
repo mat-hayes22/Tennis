@@ -60,7 +60,6 @@
       <DependentUpon>TennisCuke.feature</DependentUpon>
     </Compile>
     <Compile Include="TennisCukeSteps.cs" />
-    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -70,6 +69,12 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>TennisCuke.feature.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TennisBusiness\TennisBusiness\TennisBusiness.csproj">
+      <Project>{a84c52a8-7d6d-494a-a7ac-7dd4e5c5c7e8}</Project>
+      <Name>TennisBusiness</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

@@ -4,8 +4,7 @@
 	I want to be told the sum of two numbers
 
 @mytag
-Scenario: Add two numbers
-	Given I have entered 50 into the calculator
-	And I have entered 70 into the calculator
-	When I press add
-	Then the result should be 120 on the screen
+Scenario: First Point in Tennis
+	Given I have a tennis game and the score is '0' - '0'
+	When a point is scored by player '1'
+	Then the score should be 'Player One 15 - 0 Player Two'

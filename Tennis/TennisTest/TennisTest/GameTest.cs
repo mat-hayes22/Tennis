@@ -11,7 +11,7 @@ namespace TennisTest
         [TestMethod]
         public void PlayerOneStartsWithZero()
         {
-            Game g = new Game();
+            Game g = new Game(0,0);
             Assert.AreEqual(0, g.PlayerOneScore);
         }
 

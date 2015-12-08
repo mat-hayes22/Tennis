@@ -1,27 +1,32 @@
 ﻿using System;
 using TechTalk.SpecFlow;
-
+using TennisBusiness;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace TennisCuke
 {
     [Binding]
     public class TennisCukeSteps
     {
-        [Given(@"I have entered (.*) into the calculator")]
-        public void GivenIHaveEnteredIntoTheCalculator(int p0)
+        Game g;
+
+        [Given(@"I have a tennis game and the score is '(.*)' - '(.*)'")]
+        public void GivenIHaveATennisGameAndTheScoreIs_(int p0, int p1)
         {
-            ScenarioContext.Current.Pending();
+            g = new Game(p0, p1);
         }
-        
-        [When(@"I press add")]
-        public void WhenIPressAdd()
+
+        [When(@"a point is scored by player '(.*)'")]
+        public void WhenAPointIsScoredByPlayer(int p0)
         {
-            ScenarioContext.Current.Pending();
+            g.ScorePoint(p0 - 1);
         }
-        
-        [Then(@"the result should be (.*) on the screen")]
-        public void ThenTheResultShouldBeOnTheScreen(int p0)
+
+        [Then(@"the score should be '(.*)'")]
+        public void ThenTheScoreShouldBe(string p0)
         {
-            ScenarioContext.Current.Pending();
+            Assert.AreEqual(p0, g.ToString());
         }
+
+
     }
 }
