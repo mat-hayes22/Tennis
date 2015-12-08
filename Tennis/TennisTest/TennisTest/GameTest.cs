@@ -18,7 +18,9 @@ namespace TennisTest
         [TestMethod]
         public void PlayerTwoStartsWithZero()
         {
-            Assert.IsFalse(true);
+            Game g = new Game(0, 0);
+            Assert.AreEqual(0, g.PlayerTwoScore);
+
         }
 
         //[TestMethod]

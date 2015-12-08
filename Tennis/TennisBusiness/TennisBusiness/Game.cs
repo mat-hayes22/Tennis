@@ -15,6 +15,8 @@ namespace TennisBusiness
 
         public int PlayerOneScore { get { return Player1; } }
 
+        public int PlayerTwoScore { get { return Player2; } }
+
         public void ScorePoint(int v)
         {
             Player1 += 15;
