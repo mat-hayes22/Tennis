@@ -1,6 +1,5 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using TennisBusiness;
 
 namespace TennisTest
 {
@@ -8,29 +7,23 @@ namespace TennisTest
     public class GameTest
     {
 
-        [TestMethod]
-        public void PlayerOneStartsWithZero()
-        {
-            Game g = new Game(0,0);
-            Assert.AreEqual(0, g.PlayerOneScore);
-        }
+        //[TestMethod]
+        //public void PlayerOneNewGameStartsWithZero()
+        //{
+        //    Assert.AreEqual();
+        //}
 
-        [TestMethod]
-        public void PlayerTwoStartsWithZero()
-        {
-            Game g = new Game(0, 0);
-            Assert.AreEqual(0, g.PlayerTwoScore);
+        //[TestMethod]
+        //public void PlayerTwoNewGameStartsWithZero()
+        //{
+        // Assert.AreEqual();
+        //}
 
-        }
-
-        [TestMethod]
-        public void AtZeroZeroNextScoreShouldBe15()
-        {
-            Game g = new Game(0, 0);
-            g.ScorePoint(1);
-            Assert.AreEqual(0, g.PlayerTwoScore);
-
-        }
+        //[TestMethod]
+        //public void AtZeroZeroNextScoreShouldBe15()
+        //{
+        // Assert.AreEqual();
+        //}
 
         //[TestMethod]
         //public void At15ZeroNextScoreShouldBe30()

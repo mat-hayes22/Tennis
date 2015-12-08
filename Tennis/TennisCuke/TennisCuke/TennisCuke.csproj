@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{55132FF9-2B57-4461-94DA-ECF55B49D37E}</ProjectGuid>
+    <ProjectGuid>{E765AFC7-B2E7-422A-BF4C-634E80891207}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TennisCuke</RootNamespace>
@@ -37,7 +37,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="TechTalk.SpecFlow, Version=1.9.0.77, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
-      <HintPath>..\packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll</HintPath>
+      <HintPath>..\..\packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
@@ -54,27 +54,11 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="TennisCuke.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TennisCuke.feature</DependentUpon>
-    </Compile>
-    <Compile Include="TennisCukeSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="TennisCuke.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>TennisCuke.feature.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\TennisBusiness\TennisBusiness\TennisBusiness.csproj">
-      <Project>{a84c52a8-7d6d-494a-a7ac-7dd4e5c5c7e8}</Project>
-      <Name>TennisBusiness</Name>
-    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
