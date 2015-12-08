@@ -7,11 +7,11 @@ namespace TennisTest
     public class GameTest
     {
 
-        //[TestMethod]
-        //public void PlayerOneNewGameStartsWithZero()
-        //{
-        //    Assert.AreEqual();
-        //}
+        [TestMethod]
+        public void PlayerOneNewGameStartsWithZero()
+        {
+            Assert.AreEqual(1,1);
+        }
 
         //[TestMethod]
         //public void PlayerTwoNewGameStartsWithZero()
