@@ -1,22 +1,23 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-
+using TennisBusiness;
 
 namespace TennisTest
 {
     [TestClass]
     public class GameTest
     {
-        //[TestInitialize]
-        //public void Setup()
-        //{
-        //}
+        [TestInitialize]
+        public void Setup()
+        {
+        }
 
-        //[TestMethod]
-        //public void PlayerOneNewGameStartsWithZero()
-        //{
-        //    Assert.Inconclusive();
-        //}
+        [TestMethod]
+        public void PlayerOneNewGameStartsWithZero()
+        {
+            Game g = new Game();
+            Assert.AreEqual(0, g.PlayerOne);
+        }
 
         //[TestMethod]
         //public void PlayerTwoNewGameStartsWithZero()
