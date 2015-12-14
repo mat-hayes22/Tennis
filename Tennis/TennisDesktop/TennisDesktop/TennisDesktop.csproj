@@ -79,6 +79,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\TennisBusiness\TennisBusiness\TennisBusiness.csproj">
+      <Project>{a84c52a8-7d6d-494a-a7ac-7dd4e5c5c7e8}</Project>
+      <Name>TennisBusiness</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
