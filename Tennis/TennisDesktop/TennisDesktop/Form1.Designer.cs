@@ -45,6 +45,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.txP2Name = new System.Windows.Forms.TextBox();
+            this.buttonP1 = new System.Windows.Forms.Button();
+            this.buttonP2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -185,11 +187,33 @@
             this.txP2Name.Size = new System.Drawing.Size(100, 26);
             this.txP2Name.TabIndex = 11;
             // 
+            // buttonP1
+            // 
+            this.buttonP1.Location = new System.Drawing.Point(80, 219);
+            this.buttonP1.Name = "buttonP1";
+            this.buttonP1.Size = new System.Drawing.Size(75, 34);
+            this.buttonP1.TabIndex = 19;
+            this.buttonP1.Text = "Score";
+            this.buttonP1.UseVisualStyleBackColor = true;
+            this.buttonP1.Click += new System.EventHandler(this.buttonP1_Click);
+            // 
+            // buttonP2
+            // 
+            this.buttonP2.Location = new System.Drawing.Point(260, 219);
+            this.buttonP2.Name = "buttonP2";
+            this.buttonP2.Size = new System.Drawing.Size(75, 34);
+            this.buttonP2.TabIndex = 20;
+            this.buttonP2.Text = "Score";
+            this.buttonP2.UseVisualStyleBackColor = true;
+            this.buttonP2.Click += new System.EventHandler(this.buttonP2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(391, 265);
+            this.Controls.Add(this.buttonP2);
+            this.Controls.Add(this.buttonP1);
             this.Controls.Add(this.txP2Sets);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txP2Games);
@@ -233,6 +257,8 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txP2Name;
+        private System.Windows.Forms.Button buttonP1;
+        private System.Windows.Forms.Button buttonP2;
     }
 }
 
