@@ -122,6 +122,24 @@ this.ScenarioSetup(scenarioInfo);
 #line hidden
             this.ScenarioCleanup();
         }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Player One gets score to 40-40")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TennisCuke")]
+        public virtual void PlayerOneGetsScoreTo40_40()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Player One gets score to 40-40", ((string[])(null)));
+#line 29
+this.ScenarioSetup(scenarioInfo);
+#line 30
+ testRunner.Given("I have a game and the Score is ‘30‘– ‘40’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 31
+ testRunner.When("Player ‘1’ scores", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 32
+ testRunner.Then("the score should show as \'Player 1 40 - 40 Player 2‘", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore
