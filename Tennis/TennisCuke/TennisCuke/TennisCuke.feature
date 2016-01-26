@@ -7,26 +7,20 @@
 
 #@mytag
 Scenario: Player Scores first point
-	Given I have a game and the Score is ‘0‘– ‘0’ 
-	When Player ‘1’ scores
-	Then the score should show as 'Player 1 15 - 0 Player 2‘
+	Given I have a game with a score of '0' - '0'
+	When Player '1' scores a point
+	Then the score should show as Player 1 '15' - '0' Player 2
 
 #@mytag
-Scenario: Player One gets score to 15-10
-	Given I have a game and the Score is ‘15‘– ‘15’ 
-	When Player ‘1’ scores
-	Then the score should show as 'Player 1 30 - 15 Player 2‘
-
+Scenario: Player Scores second point
+	Given I have a game with a score of '0' - '15'
+	When Player '1' scores a point
+	Then the score should show as Player 1 '15' - '15' Player 2
 
 #@mytag
-Scenario: Player One gets score to 10-15
-	Given I have a game and the Score is ‘40‘– ‘40’ 
-	When Player ‘2’ scores
-	Then the score should show as 'Player 1 40 - 50 Player 2‘
+Scenario: Player with names Scores second point
+	Given I have a game between 'Mat' and 'Carl' and the score is '0' - '15'
+	When Player '1' scores a point
+	Then the score should show as 'Mat' '15' - '15' 'Carl'
 
-
-	#@mytag
-Scenario: Player One gets score to 40-40
-	Given I have a game and the Score is ‘30‘– ‘40’ 
-	When Player ‘1’ scores
-	Then the score should show as 'Player 1 40 - 40 Player 2‘
+# Refactor... Player '1' becomes the name.... next test?

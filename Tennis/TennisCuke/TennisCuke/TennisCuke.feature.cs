@@ -78,65 +78,47 @@ namespace TennisCuke
 #line 9
 this.ScenarioSetup(scenarioInfo);
 #line 10
- testRunner.Given("I have a game and the Score is ‘0‘– ‘0’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I have a game with a score of \'0\' - \'0\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 11
- testRunner.When("Player ‘1’ scores", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("Player \'1\' scores a point", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 12
- testRunner.Then("the score should show as \'Player 1 15 - 0 Player 2‘", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the score should show as Player 1 \'15\' - \'0\' Player 2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Player One gets score to 15-10")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Player Scores second point")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TennisCuke")]
-        public virtual void PlayerOneGetsScoreTo15_10()
+        public virtual void PlayerScoresSecondPoint()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Player One gets score to 15-10", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Player Scores second point", ((string[])(null)));
 #line 15
 this.ScenarioSetup(scenarioInfo);
 #line 16
- testRunner.Given("I have a game and the Score is ‘15‘– ‘15’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I have a game with a score of \'0\' - \'15\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 17
- testRunner.When("Player ‘1’ scores", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("Player \'1\' scores a point", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 18
- testRunner.Then("the score should show as \'Player 1 30 - 15 Player 2‘", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the score should show as Player 1 \'15\' - \'15\' Player 2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Player One gets score to 10-15")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Player with names Scores second point")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TennisCuke")]
-        public virtual void PlayerOneGetsScoreTo10_15()
+        public virtual void PlayerWithNamesScoresSecondPoint()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Player One gets score to 10-15", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Player with names Scores second point", ((string[])(null)));
+#line 21
+this.ScenarioSetup(scenarioInfo);
 #line 22
-this.ScenarioSetup(scenarioInfo);
+ testRunner.Given("I have a game between \'Mat\' and \'Carl\' and the score is \'0\' - \'15\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 23
- testRunner.Given("I have a game and the Score is ‘40‘– ‘40’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.When("Player \'1\' scores a point", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 24
- testRunner.When("Player ‘2’ scores", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 25
- testRunner.Then("the score should show as \'Player 1 40 - 50 Player 2‘", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Player One gets score to 40-40")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TennisCuke")]
-        public virtual void PlayerOneGetsScoreTo40_40()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Player One gets score to 40-40", ((string[])(null)));
-#line 29
-this.ScenarioSetup(scenarioInfo);
-#line 30
- testRunner.Given("I have a game and the Score is ‘30‘– ‘40’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 31
- testRunner.When("Player ‘1’ scores", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 32
- testRunner.Then("the score should show as \'Player 1 40 - 40 Player 2‘", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the score should show as \'Mat\' \'15\' - \'15\' \'Carl\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

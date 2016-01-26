@@ -9,8 +9,7 @@ namespace TennisBusiness
         public int PlayerTwo { get { return _Scores[2]; } }
 
         private List<int> _Scores;
-        private short p0;
-        private short p1;
+        private List<string> _Names;
 
         public Game()
         {
@@ -20,16 +19,31 @@ namespace TennisBusiness
         private void Setup()
         {
             _Scores = new List<int>();
+            _Names = new List<string>();
+            _Names.Add("");
+            _Names.Add("Player 1");
+            _Names.Add("Player 2");
+
             _Scores.Add(0);
             _Scores.Add(0);
             _Scores.Add(0);
         }
 
-        public Game(short playerOneScore, short playerTwoScore)
+        public Game(int playerOneScore, int playerTwoScore)
         {
             Setup();
             _Scores[1] = playerOneScore;
             _Scores[2] = playerTwoScore;
+        }
+
+        public Game(int playerOneScore, int playerTwoScore, string playerOneName, string playerTwoName) 
+        {
+            Setup();
+            _Scores[1] = playerOneScore;
+            _Scores[2] = playerTwoScore;
+            _Names[1] = playerOneName;
+            _Names[2] = playerTwoName;
+
         }
 
         public void Score(int whichPlayer)
@@ -46,15 +60,7 @@ namespace TennisBusiness
                         _Scores[whichPlayer] += 5;
                         break;
                     case 40:
-                        if (_Scores[GetOtherPlayer(whichPlayer)] == 40)
-                        {
-                            _Scores[whichPlayer] += 10;
-                        }
-                        else
-                        {
-                            _Scores[whichPlayer] += 15;
-
-                        }
+                        _Scores[whichPlayer] += _Scores[GetOtherPlayer(whichPlayer)] == 40 ? 10 : 15;
                         break;
 
                     case 30:
@@ -70,12 +76,12 @@ namespace TennisBusiness
 
         public string Scores()
         {
-            return string.Format("Player 1 {0} - {1} Player 2", _Scores[1], _Scores[2]);
+            return string.Format("{2} {0} - {1} {3}", _Scores[1], _Scores[2], _Names[1], _Names[2]);
         }
 
         public int GetOtherPlayer(int v)
         {
-            if (v == 1) { return 2; } else { return 1; };
+            return v == 1 ? 2 : 1; 
         }
     }
 }
