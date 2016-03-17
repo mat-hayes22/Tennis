@@ -26,10 +26,11 @@ namespace Tennis
         {
             try
             {
-                APIParms SP = getScoreParms(pararmeters);
-                Game g = new Game(SP.Player1Score, SP.Player2Score, SP.Player1Name, SP.Player2Name);
-                g.Score(SP.whichPlayer);
-                return Response.AsJson(g.Scores());
+                //APIParms SP = getScoreParms(pararmeters);
+                //Game g = new Game(SP.Player1Score, SP.Player2Score, SP.Player1Name, SP.Player2Name);
+                //g.Score(SP.whichPlayer);
+                //return Response.AsJson(g.Scores());
+                return Response.AsJson("");
             }
             catch (Exception)
             {
