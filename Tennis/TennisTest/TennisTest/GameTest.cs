@@ -8,68 +8,81 @@ namespace TennisTest
     public class GameTest
     {
 
-        [TestMethod]
-        public void AtZeroZeroNextScoreShouldBe15()
-        {
-            Game g = new Game("", "", 0, 0);
-            g.ScorePoint(1);
-            Assert.AreEqual (15, g.PlayerOneScore);
+        //[TestInitialize]
+        //public void Setup()
+        //{
+        //}
 
-        }
+        //[TestMethod]
+        //public void PlayerOneNewGameStartsWithZero()
+        //{
+        //    Assert.Inconclusive();
+        //}
 
-        [TestMethod]
-        public void At15ZeroNextScoreShouldBe30()
-        {
-            Game g = new Game("", "", 15, 0);
-            g.ScorePoint(1);
-            Assert.AreEqual(30, g.PlayerOneScore);
-        }
+        //[TestMethod]
+        //public void PlayerTwoNewGameStartsWithZero()
+        //{
+        //    Assert.Inconclusive();
+        //}
 
-        [TestMethod]
-        public void At30ZeroNextScoreShouldBe40()
-        {
-            Game g = new Game("", "", 30, 0);
-            g.ScorePoint(1);
-            Assert.AreEqual(40, g.PlayerOneScore);
+        //[TestMethod]
+        //public void AtZeroZeroNextScoreShouldBe15()
+        //{
+        //    Assert.Inconclusive();
 
-        }
+        //}
 
-        [TestMethod]
-        public void At40ZeroNextScoreShouldBe55()
-        {
-            Game g = new Game("", "", 40, 0);
-            g.ScorePoint(1);
-            Assert.AreEqual(55, g.PlayerOneScore);
-        }
+        //[TestMethod]
+        //public void At15ZeroNextScoreShouldBe30()
+        //{
+        //    Assert.Inconclusive();
 
-        [TestMethod]
-        public void At4040NextScoreShouldBe50()
-        {
-            Game g = new Game("", "", 40, 40);
-            g.ScorePoint(1);
-            Assert.AreEqual(50, g.PlayerOneScore);
+        //}
 
-        }
+        //[TestMethod]
+        //public void At30ZeroNextScoreShouldBe40()
+        //{
+        //    Assert.Inconclusive();
 
+        //}
 
-        [TestMethod]
-        public void At4050PlayerOneNextScoreShouldBe40()
-        {
-            Game g = new Game("", "", 40, 50);
-            g.ScorePoint(1);
-            Assert.AreEqual(40, g.PlayerOneScore);
+        //[TestMethod]
+        //public void At40ZeroNextScoreShouldBe55()
+        //{
+        //    Assert.Inconclusive();
 
-        }
+        //}
 
-        [TestMethod]
-        public void At4050NextScoreOtherPlayersScoureShouldBe55()
-        {
-            Game g = new Game("", "", 40, 50);
-            g.ScorePoint(2);
-            Assert.AreEqual(55, g.PlayerTwoScore);
+        //[TestMethod]
+        //public void At4040NextScoreShouldBe50()
+        //{
+        //    Assert.Inconclusive();
 
-        }
+        //}
 
+        //[TestMethod]
+        //public void At4050PlayerOneNextScoreShouldBe40()
+        //{
+        //    Assert.Inconclusive();
+
+        //}
+
+        //[TestMethod]
+        //public void At4050NextScoreOtherPlayersScoureShouldBe55()
+        //{
+        //    Assert.Inconclusive();
+
+        //}
+
+        //[TestMethod]
+        //public void ScoreShouldShowPlayerOneScoreDashScorePlayerTwo()
+        //{
+        //    Assert.Inconclusive();
+
+        //}
+
+        #region NonTests
+        #endregion
 
     }
 }
