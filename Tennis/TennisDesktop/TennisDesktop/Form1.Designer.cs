@@ -32,7 +32,6 @@
             this.txP1Name = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txP1Score = new System.Windows.Forms.TextBox();
             this.txP1Games = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txP1Sets = new System.Windows.Forms.TextBox();
@@ -41,10 +40,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txP2Games = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txP2Score = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.txP2Name = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -81,13 +85,6 @@
             this.label4.Size = new System.Drawing.Size(55, 20);
             this.label4.TabIndex = 5;
             this.label4.Text = "Score:";
-            // 
-            // txP1Score
-            // 
-            this.txP1Score.Location = new System.Drawing.Point(80, 123);
-            this.txP1Score.Name = "txP1Score";
-            this.txP1Score.Size = new System.Drawing.Size(100, 26);
-            this.txP1Score.TabIndex = 6;
             // 
             // txP1Games
             // 
@@ -153,13 +150,6 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "Games:";
             // 
-            // txP2Score
-            // 
-            this.txP2Score.Location = new System.Drawing.Point(260, 123);
-            this.txP2Score.Name = "txP2Score";
-            this.txP2Score.Size = new System.Drawing.Size(100, 26);
-            this.txP2Score.TabIndex = 14;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -185,16 +175,51 @@
             this.txP2Name.Size = new System.Drawing.Size(100, 26);
             this.txP2Name.TabIndex = 11;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(80, 219);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 34);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Score";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(260, 219);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(100, 34);
+            this.button2.TabIndex = 20;
+            this.button2.Text = "Score";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(80, 123);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(100, 26);
+            this.numericUpDown1.TabIndex = 21;
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.Location = new System.Drawing.Point(260, 123);
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(100, 26);
+            this.numericUpDown2.TabIndex = 22;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(391, 265);
+            this.Controls.Add(this.numericUpDown2);
+            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txP2Sets);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txP2Games);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.txP2Score);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txP2Name);
@@ -202,13 +227,14 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txP1Games);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txP1Score);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txP1Name);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -220,7 +246,6 @@
         private System.Windows.Forms.TextBox txP1Name;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txP1Score;
         private System.Windows.Forms.TextBox txP1Games;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txP1Sets;
@@ -229,10 +254,13 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txP2Games;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txP2Score;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txP2Name;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
     }
 }
 
